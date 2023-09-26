@@ -1,0 +1,71 @@
+﻿<style>
+    .notification-menu {
+        padding: 10px 65px;
+        margin-top: 2px;
+        cursor: pointer;
+        white-space: nowrap;
+        background-color: white !important;
+        outline-color: black;
+        border-bottom: 1px solid #eee;
+    }
+
+    @keyframes swing {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(20deg);
+        }
+
+        50% {
+            transform: rotate(-20deg);
+        }
+
+        75% {
+            transform: rotate(20deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .swing-animation {
+        animation: swing 1s ease-in-out;
+        transform-origin: top center;
+    }
+
+    #toast-container > .toast {
+        background-image: none !important;
+    }
+
+        #toast-container > .toast:before {
+            position: relative;
+            font-size: 24px;
+            line-height: 18px;
+            float: left;
+            margin-left: -1em;
+            color: #FFF;
+            padding-right: 0.5em;
+            margin-right: 0.5em;
+        }
+
+
+    #toast-container .toast {
+        background-color: #1b75bc !important;
+    }
+
+    #toast-container > .fa-check, .toast {
+        background-color: #328b17 !important;
+    }
+
+    #toast-container > .fa-trash, .toast {
+        background-color: #590619 !important;
+    }
+
+
+    .toast-message {
+        font-family: Calibri;
+    }
+</style>

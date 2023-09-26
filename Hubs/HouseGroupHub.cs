@@ -41,7 +41,6 @@ namespace SignalR.Hubs
                         houseList += str.Split(':')[1] + " ";
                     }
                 }
-
                 await Clients.Caller.SendAsync("subscriptionStatus", houseList, houseName.ToLower(), false);
                 await Clients.Others.SendAsync("newMemberRemovedFromHouse", houseName);
                 await Groups.RemoveFromGroupAsync(Context.ConnectionId, houseName);
